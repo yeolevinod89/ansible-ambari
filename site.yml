@@ -4,7 +4,7 @@
   hosts: all
   sudo: yes
   roles:
-    - { role: geerlingguy.repo-epel }
+    - { role: Ennexa.repo-epel }
   tasks:
     - yum: name=python-keyczar state=latest
     - service: name=iptables state=stopped enabled=no
